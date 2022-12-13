@@ -1,7 +1,9 @@
+import React from 'react'
+
 const index = () => {
   return (
-    <div>
-      <p>Parent component</p>
-    </div>
+    <div>index</div>
   )
 }
+
+export default index

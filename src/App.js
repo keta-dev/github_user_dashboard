@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import AuthWrapper from './pages/AuthWrapper';
 import PrivateRoute from './pages/PrivateRoute';
@@ -7,15 +7,15 @@ import Error from './pages/Error';
 
 function App() {
   return (
-    <AuthWrapper>
+    // <AuthWrapper>
       <Router>
         <Routes>
-          <Route path='/' element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+          <Route path='/' element={<Dashboard />} />
           <Route path='login' element={<Login />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </Router>
-    </AuthWrapper>
+    // </AuthWrapper>
   );
 }
 

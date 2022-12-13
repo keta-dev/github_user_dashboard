@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   login: 'john-smilga',
   id: 42133389,

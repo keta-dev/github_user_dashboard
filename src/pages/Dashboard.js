@@ -1,8 +1,20 @@
+import Info from '../components/Info';
+import User from '../components/User';
+import Repos from '../components/Repos';
+import Navbar from '../components/Navbar';
+import Search from '../components/Search';
+import loadingImage from '../images/preloader.gif';
+import { GithubContext } from '../context/context';
+
 const Dashboard = () => {
   return (
-    <div>
-      <p>dashboard page</p>
-    </div>
+    <main>
+      <Navbar/>
+      <Search />
+      <Info />
+      <User />
+      <Repos />
+    </main>
   )
 }
 
