@@ -1,3 +1,4 @@
+import React from 'react';
 import Info from '../components/Info';
 import User from '../components/User';
 import Repos from '../components/Repos';
@@ -7,13 +8,23 @@ import loadingImage from '../images/preloader.gif';
 import { GithubContext } from '../context/context';
 
 const Dashboard = () => {
+  const { loading } = React.useContext(GithubContext);
+  if (loading) {
+    return (
+      <main>
+        <Navbar />
+        <Search />
+        <img src={loadingImage} className='loading-img' alt='loding' />
+      </main>
+    );
+  }
   return (
     <main>
-      {/* <Navbar/> */}
-      {/* <Search /> */}
+      <Navbar/>
+      <Search />
       <Info />
       <User />
-      {/* <Repos /> */}
+      <Repos />
     </main>
   )
 }
