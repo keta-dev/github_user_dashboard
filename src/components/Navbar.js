@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useAuth0 } from '@auth0/auth0-react';
 
 // dev-0acln7t4zljyhi7w.us.auth0.com
 // 7Ge4li6Y5p4CT5fCg7KjqpceDGXfLLfq
