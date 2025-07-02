@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
-import AuthWrapper from './pages/AuthWrapper';
-import PrivateRoute from './pages/PrivateRoute';
 import Login from './pages/Login';
 import Error from './pages/Error';
 
